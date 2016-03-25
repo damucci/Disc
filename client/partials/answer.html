@@ -1,0 +1,20 @@
+<div ng-controller='answerController'>
+
+
+    <h1>{{ questions[0].question }}</h1>
+    <h3>{{ questions[0].description }}</h3>
+    <!-- {{questions[0]._id}} -->
+
+    <form>
+        Your Answer: <br>
+        <textarea rows="6" cols="100" ng-model='newAnswer.answer'></textarea><br>
+        Supporting details for your answer (optional):<br>
+        <textarea rows="6" cols="100" ng-model='newAnswer.details'></textarea><br>
+
+
+        <a href="#/"><button>Cancel</button></a>
+        <input type="submit" value="Submit" ng-click='addAnswer()'>
+    </form>
+		<p><a href="#/">Logout</a></p>
+
+</div>

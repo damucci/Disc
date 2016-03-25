@@ -1,0 +1,27 @@
+<div ng-controller='showController'>
+
+
+
+    <h1>{{ questions[0].question }}</h1>
+    <h3>{{ questions[0].description }}</h3>
+    <br><br>
+
+
+
+    <div ng-repeat='question in questions'>
+        <div ng-repeat='answer in question.answers'>
+        <hr>
+            <h4>{{ answer.answer }}</h4>
+            <p>{{ answer.details }}</p>
+            {{answer.likes}}
+
+            <button ng-click='likes()'>Like</button>
+        </div>
+
+    </div>
+
+		<p><a href="#/">Logout</a></p>
+
+
+
+</div>

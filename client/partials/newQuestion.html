@@ -1,0 +1,17 @@
+<div ng-controller='questionController'>
+
+	<h1>New Question</h1>
+
+    <form>
+        Question: <br>
+        <textarea rows="6" cols="100" ng-model='newQuestion.question'></textarea><br>
+        Description (optional): <br>
+        <textarea rows="6" cols="100" ng-model='newQuestion.description'></textarea><br>
+        <a href="#/"><button>Cancel</button></a>
+        <input type="submit" value="submit" ng-click='addQuestion()'>
+    </form>
+
+		<p><a href="#/">Logout</a></p>
+
+
+</div>
