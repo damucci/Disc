@@ -3,14 +3,14 @@
 var mongoose = require('mongoose');
 // create our friendSchema
 var QuestionSchema = new mongoose.Schema({
-  question: {type:String, required: true, minlength:10}
+  question: {type:String, required: true, minlength:10},
   description: String,
   totalAnswers: Number,
   answers: [{
   	answer: {type:String, required: true},
   	details: {type:String, required: true},
   	questionID: {type:String, required: true},
-  	likes: type:{Number, required: true}
+  	likes: Number
   }]
 });
 // use the schema to create the model

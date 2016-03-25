@@ -14,7 +14,6 @@ require('./server/config/mongoose.js');
 //always require routes AFTER requiring mongoose
 require('./server/config/routes.js')(app);
 
-app.listen(8000, function() {
- console.log("listening on port 8000");
+app.listen(9000, function() {
+ console.log("listening on port 9000");
 })
-
