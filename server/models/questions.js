@@ -4,8 +4,8 @@ var mongoose = require('mongoose');
 // create our friendSchema
 var QuestionSchema = new mongoose.Schema({
   question: {type:String, required: true, minlength:10}
-  description: {type:String, required: true},
-  totalAnswers: {Number, required: true},
+  description: String,
+  totalAnswers: Number,
   answers: [{
   	answer: {type:String, required: true},
   	details: {type:String, required: true},
